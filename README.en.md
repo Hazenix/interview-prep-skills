@@ -2,18 +2,16 @@
 
 [简体中文](README.md) · [Ask AI to install](#installation) · [Examples in Chinese](docs/examples.md)
 
-Practice technical interviews with an AI interviewer that follows up on your answers. Start with a project from your resume, explain your decisions, and get feedback on what to practice next. You can also turn selected resume bullets into a Markdown question set with follow-ups and optional sample answers.
+**Turn a resume bullet into the questions an interviewer could ask.** Skip the mock interview and get a Markdown question set with follow-ups and optional sample answers.
 
-> **Candidate:** When a product changes, I update the database and then delete its Redis cache entry.
->
-> **Interviewer:** What happens if a read fetches the old value before the update, then writes it back to the cache after the deletion?
+When you want to practice responding in an interview, choose a frontend, Java/Go/C++ backend, or AI application development mock interview. The interviewer asks follow-ups based on your answers and gives feedback at the end.
 
 | What you want to practice | Skill | What to expect |
 | --- | --- | --- |
+| Questions you might get about your resume | [Resume question generator](skills/resume-interview-question-generator/SKILL.md) | A Markdown question set grouped by resume bullet, with optional sample answers |
 | Frontend, browser fundamentals, React or Vue | [Frontend mock interview](skills/frontend-interview-simulator/SKILL.md) | Project questions, technical follow-ups, optional coding, and feedback |
 | Java, Go or C++ backend development | [Backend mock interview](skills/backend-interview-simulator/SKILL.md) | One question at a time, with follow-ups based on your answers |
 | AI application development with agents, RAG or MCP | [AI application mock interview](skills/ai-dev-interview-simulator/SKILL.md) | Project questions, evaluation and implementation discussions, and optional exercises |
-| Questions you might get about your resume | [Resume question generator](skills/resume-interview-question-generator/SKILL.md) | A Markdown question set grouped by resume bullet, with optional sample answers |
 
 The skill instructions and worked examples are primarily in Chinese.
 
@@ -23,29 +21,43 @@ Paste this request into an AI tool that supports Agent Skills and can access Git
 
 ```text
 Install the following skills from https://github.com/Hazenix/interview-prep-skills:
+- skills/resume-interview-question-generator/
 - skills/frontend-interview-simulator/
 - skills/backend-interview-simulator/
 - skills/ai-dev-interview-simulator/
-- skills/resume-interview-question-generator/
 
 Follow this tool's installation rules, keep each skill directory intact, and list the installed skills.
 ```
 
 Keep just the directory you need if you want to install a single skill.
 
-## Try it
-
-```text
-Use backend-interview-simulator for a Java backend mock interview.
-Focus on this resume bullet: I added Redis caching to a product details service to reduce database reads during peak traffic.
-```
+## Resume question generator
 
 ```text
 Use resume-interview-question-generator to create questions and follow-ups from this resume bullet. Questions only, please.
 Resume bullet: I added Redis caching to a product details service to reduce database reads during peak traffic.
 ```
 
-The question generator saves a new Markdown file under `./resume/` in your working directory by default. Remove contact details and confidential information before sharing resume or project materials.
+For this bullet, the question set could ask how you kept cached product details fresh, then follow up with what happens if a read writes an old value back after cache invalidation. A new Markdown file is saved under `./resume/` in your working directory by default.
+
+## What the three mock interviews share
+
+- **Difficulty by career stage.** Choose a regular internship, summer internship, new grad, or early career interview.
+- **Six interviewer styles.** Choose a strict, encouraging, efficient, theory focused, practical, or balanced interviewer.
+- **Follow-ups based on your answers.** The interviewer asks one question at a time and probes implementation, trade-offs, and how you verified your work.
+- **Optional resume and job description.** Use your own project experience and a target role to guide the interview.
+- **Coding or practical exercises.** Add an exercise relevant to the track.
+- **Progress tracking and two correction modes.** Keep track of covered topics. Choose between a stricter simulation and immediate guidance when you make a mistake.
+- **Feedback by dimension.** Get scores and suggestions tied to what you covered in the interview.
+
+> **Candidate:** When a product changes, I update the database and then delete its Redis cache entry.
+>
+> **Interviewer:** What happens if a read fetches the old value before the update, then writes it back to the cache after the deletion?
+
+```text
+Use backend-interview-simulator for a Java backend mock interview.
+Focus on this resume bullet: I added Redis caching to a product details service to reduce database reads during peak traffic.
+```
 
 ## Contributing
 
