@@ -1,9 +1,9 @@
 ---
 name: backend-interview-simulator
 description: >
-  Use when users want to practice or simulate Java, C++, Go, Golang,
-  mixed-stack, or general backend technical interviews, including
-  resume-based and job-description-based interview preparation.
+  Use when users want to start or continue an interactive Java, C++, Go,
+  mixed-stack, or general backend mock interview with one question at a time,
+  including interviews tailored to a resume or job description.
 ---
 
 # 后端面试模拟器
