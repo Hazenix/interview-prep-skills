@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-仓库提供两个独立的 skill：一个逐轮模拟后端技术面试，一个根据简历条目一次性生成备题文档。按需要选择使用。
+仓库提供三个独立的 skill，分别用于后端技术面试模拟、AI 应用开发面试模拟和简历批量出题。
 
 ## 逐轮模拟面试：backend-interview-simulator
 
@@ -23,6 +23,22 @@ AI 扮演后端技术面试官，每次只问一个问题，根据候选人的�
 ```
 
 面试中可以说“继续”“跳过”“结束”“换个风格”或“反馈”。
+
+## AI 应用开发模拟面试：ai-dev-interview-simulator
+
+[查看 skill](skills/ai-dev-interview-simulator/SKILL.md)
+
+AI 模拟 AI 应用开发岗位面试，根据候选人的回答逐轮追问，结束后给出评分和反馈。
+
+- 考察 LLM、Agent、RAG、MCP、Embedding、向量数据库及 AI 编程工具。
+- 支持实习、校招和社招 1–3 年，可选择面试官风格和纠错模式。
+- 可提供简历和岗位 JD 定制项目深挖与技术题，也可加入 Prompt 设计、Agent 流程设计或 RAG 实现等实操题。
+
+安装后可以说：
+
+```text
+开始一场 AI 应用开发模拟面试。我想练习 Agent 和 RAG 项目深挖。
+```
 
 ## 简历批量出题：resume-interview-question-generator
 
@@ -45,13 +61,14 @@ AI 扮演后端技术面试官，每次只问一个问题，根据候选人的�
 
 ## 安装
 
-把下面的请求发给支持 skills 的 AI 工具，让它安装并检查两个 skill：
+把当前仓库的 GitHub 链接和下面的请求一起发给支持 skills 的 AI 工具。
 
 ```text
-请安装 https://github.com/Hazenix/backend-interview-simulator 中的两个 skill：
+请从我提供的 GitHub 仓库安装这三个 skill：
 1. skills/backend-interview-simulator/
-2. skills/resume-interview-question-generator/
-请将每个目录完整安装到当前工具的 skills 目录，并确认两个 skill 都能使用。
+2. skills/ai-dev-interview-simulator/
+3. skills/resume-interview-question-generator/
+请将每个目录完整安装到当前工具的 skills 目录，并确认三个 skill 都能使用。
 ```
 
 只需要其中一个时，在请求中明确指定对应的 skill 名称和目录。
@@ -59,8 +76,11 @@ AI 扮演后端技术面试官，每次只问一个问题，根据候选人的�
 ## 项目结构
 
 ```text
-backend-interview-simulator/
+.
 ├── skills/
+│   ├── ai-dev-interview-simulator/
+│   │   ├── SKILL.md                           # AI 应用开发模拟面试
+│   │   └── references/                        # AI 应用开发知识库与规则
 │   ├── backend-interview-simulator/
 │   │   ├── SKILL.md                           # 逐轮模拟面试
 │   │   └── references/                        # 模拟面试所需的知识库与规则
@@ -77,3 +97,5 @@ backend-interview-simulator/
 ## 许可证与致谢
 
 本项目采用 [MIT License](LICENSE)。技术知识库部分引用了 [JavaGuide](https://github.com/Snailclimb/JavaGuide) 的高频面试题整理，仅作为面试考察点使用，不改变其原有许可。感谢 JavaGuide 和 [xiaolincoding](https://xiaolincoding.com/) 提供的公开资料。
+
+AI 应用开发模拟面试 skill 来自 [Hazenix/ai-dev-interview-simulator](https://github.com/Hazenix/ai-dev-interview-simulator/tree/13010073f1473fa393752a5aee675c9ff764ce51)，适用相同的 MIT 许可证。
