@@ -2,12 +2,13 @@
 
 [简体中文](README.md) · [Ask AI to install](#installation) · [Examples in Chinese](docs/examples.md)
 
-**Turn a resume bullet into the questions an interviewer could ask.** Skip the mock interview and get a Markdown question set with follow-ups and optional sample answers.
+**Prepare your resume and practice for interviews.** Turn project notes and code into Chinese resume bullets, then use any bullet to generate a Markdown question set with follow-ups and optional sample answers.
 
 When you want to practice responding in an interview, choose a frontend, Java/Go/C++ backend, or AI application development mock interview. The interviewer asks follow-ups based on your answers and gives feedback at the end.
 
-| What you want to practice | Skill | What to expect |
+| What you want to prepare | Skill | What to expect |
 | --- | --- | --- |
+| Resume bullets from project or internship materials | [Resume bullet writer](#resume-bullet-writer) | Candidate bullets in Chinese, a shortlist, and ways to verify estimated impact |
 | Questions you might get about your resume | [Resume question generator](skills/resume-interview-question-generator/SKILL.md) | A Markdown question set grouped by resume bullet, with optional sample answers |
 | Frontend, browser fundamentals, React or Vue | [Frontend mock interview](skills/frontend-interview-simulator/SKILL.md) | Project questions, technical follow-ups, optional coding, and feedback |
 | Java, Go or C++ backend development | [Backend mock interview](skills/backend-interview-simulator/SKILL.md) | One question at a time, with follow-ups based on your answers |
@@ -21,6 +22,7 @@ Paste this request into an AI tool that supports Agent Skills and can access Git
 
 ```text
 Install the following skills from https://github.com/Hazenix/interview-prep-skills:
+- skills/resume-bullets/
 - skills/resume-interview-question-generator/
 - skills/frontend-interview-simulator/
 - skills/backend-interview-simulator/
@@ -30,6 +32,18 @@ Follow this tool's installation rules, keep each skill directory intact, and lis
 ```
 
 Keep just the directory you need if you want to install a single skill.
+
+## Resume bullet writer
+
+[`resume-bullets`](skills/resume-bullets/SKILL.md) drafts and shortlists bullets from internship, personal project, or open-source work. It draws on project materials by default. Choose personal contribution mode to focus on your own commits and pull requests.
+
+The draft labels estimates and explains how to verify them. By default, the Markdown document is saved under `./resume/` in your working directory.
+
+```text
+Use resume-bullets to draft Chinese resume bullets from the code and README in ./task-dashboard. Focus on the impact of retries and batch imports in this personal project.
+```
+
+[See a resume bullet example in Chinese](docs/examples.md#简历条目打磨)
 
 ## Resume question generator
 

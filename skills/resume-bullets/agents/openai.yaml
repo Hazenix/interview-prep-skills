@@ -1,0 +1,4 @@
+interface:
+  display_name: "简历条目打磨"
+  short_description: "从实习、个人或开源项目中提炼可追问、有量化数据的中文简历条目"
+  default_prompt: "使用 $resume-bullets，从项目代码和文档提炼中文简历条目，优先量化业务或工程收益。估算值请标明待验证，并给出验证方法。项目路径是……，相关文档是……。"
