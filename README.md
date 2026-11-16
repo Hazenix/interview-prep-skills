@@ -174,8 +174,8 @@ AI 从面试官视角为你选定的简历条目出题。贴项目、实习经�
 
 ## 许可证与致谢
 
-本项目采用 [MIT License](LICENSE)。技术知识库部分引用了 [JavaGuide](https://github.com/Snailclimb/JavaGuide) 的高频面试题整理，仅作为面试考察点使用，不改变其原有许可。感谢 JavaGuide 和 [xiaolincoding](https://xiaolincoding.com/) 提供的公开资料。
+本项目采用 [MIT License](LICENSE)。
 
-AI 应用开发模拟面试 skill 来自 [Hazenix/ai-dev-interview-simulator](https://github.com/Hazenix/ai-dev-interview-simulator/tree/13010073f1473fa393752a5aee675c9ff764ce51)，适用相同的 MIT 许可证。
+技术知识库部分引用了 [JavaGuide](https://github.com/Snailclimb/JavaGuide) 的高频面试题整理，仅作为面试考察点使用，不改变其原有许可。感谢 JavaGuide 和 [xiaolincoding](https://xiaolincoding.com/) 提供的公开资料。
 
-前端模拟面试的设计参考了 [Witcher-xiang/frontend-interview-skill](https://github.com/Witcher-xiang/frontend-interview-skill) 的技术覆盖方向；本仓库的面试流程与题库独立编写。
+
